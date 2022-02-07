@@ -14,7 +14,7 @@ export default {
         },
         {
           href: '/',
-          title: 'Dashboard',
+          title: 'Home',
           icon: 'fa fa-user'
           // external: true,
           // exact: true // apply active class when current route is exactly the same. (based on route records, query & hash are not relevant)
