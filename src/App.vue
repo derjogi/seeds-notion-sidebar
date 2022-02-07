@@ -1,9 +1,6 @@
 <template>
   <sidebar-menu :menu="menu" />
   <router-view/>
-  <div>
-    Hallo
-  </div>
 </template>
 
 <script>
