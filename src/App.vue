@@ -1,10 +1,43 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <sidebar-menu :menu="menu" />
   <router-view/>
+  <div>
+    Hallo
+  </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      menu: [
+        {
+          header: 'Main Navigation',
+          hiddenOnCollapse: true
+        },
+        {
+          href: '/',
+          title: 'Dashboard',
+          icon: 'fa fa-user'
+          // external: true,
+          // exact: true // apply active class when current route is exactly the same. (based on route records, query & hash are not relevant)
+        },
+        {
+          href: '/about',
+          title: 'About',
+          icon: 'fa fa-chart-area',
+          child: [
+            {
+              href: '/charts/sublink',
+              title: 'Sub Link'
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+</script>
 
 <style lang="stylus">
 #app
