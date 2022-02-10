@@ -25,8 +25,12 @@ export default {
           icon: 'fa fa-chart-area',
           child: [
             {
-              href: '/charts/sublink',
-              title: 'Sub Link'
+              href: '/notion/quests',
+              title: 'Quests'
+            },
+            {
+              href: '/notion/any',
+              title: 'Any'
             }
           ]
         }
