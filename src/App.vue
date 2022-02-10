@@ -29,8 +29,8 @@ export default {
               title: 'Quests'
             },
             {
-              href: '/notion/any',
-              title: 'Any'
+              href: '/notion/random',
+              title: 'Random'
             }
           ]
         }

@@ -1,7 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 
-const routes = [
+const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
@@ -21,8 +21,8 @@ const routes = [
     component: () => import('../views/notion/Quests.vue')
   },
   {
-    path: '/notion/any',
-    name: 'Any',
+    path: '/notion/random',
+    name: 'Random',
     component: () => import('../views/notion/Random.vue')
   }
 ]
